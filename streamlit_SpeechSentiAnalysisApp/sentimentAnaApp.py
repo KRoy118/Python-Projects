@@ -1,3 +1,5 @@
+#App for the Emotion/Sentiment in text classifier  using Streamlit
+
 from sre_constants import SUCCESS
 import streamlit as st
 import pandas as pd
