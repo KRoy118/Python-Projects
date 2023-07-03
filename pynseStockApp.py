@@ -1,5 +1,7 @@
 import streamlit as st
-
+st.code(
+        "pip install streamlit matplotlib mplfinance plotly git+https://github.com/StreamAlpha/pynse.git"
+    )   
 try:
     from pynse import *
     import datetime
@@ -13,9 +15,7 @@ except ModuleNotFoundError as e:
         f"Looks like requirements are not installed: '{e}'. Run the following command to install requirements"
     )
 
-    st.code(
-        "pip install streamlit matplotlib mplfinance plotly git+https://github.com/StreamAlpha/pynse.git"
-    )
+    
 else:
     nse = Nse()
 
